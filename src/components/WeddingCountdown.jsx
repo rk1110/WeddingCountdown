@@ -12,7 +12,7 @@ const EVENT_NAME = "Rutvik ❤️ Kinjal";
 const EVENT_DATE_ISO = "2026-02-08T00:00:00"; // YYYY-MM-DDTHH:MM:SS
 // ----------------------------------------------------------------------------------------------------
 
-const SAMPLE_BG = "DSC_4401.JPG"; // decorative placeholder image
+const SAMPLE_BG = "/DSC_4401.JPG"; // decorative placeholder image
 
 // Helper: calculate time left safely
 function calcTimeLeft(dateStr) {
@@ -70,9 +70,9 @@ export default function WeddingCountdown() {
         .wc-stage{ position:relative; width:100%; max-width:none; display:flex; align-items:flex-end; justify-content:center; padding:18px 24px; height:100vh; }
 
         .wc-photo-panel{ position:fixed; left:0; top:0; width:100vw; height:100vh; border-radius:0; overflow:hidden; box-shadow:none; z-index:0; }
-        .wc-photo-panel img{ width:100%; height:100%; object-fit:cover; object-position:center; content: url("DSC_4401.JPG"); filter:blur(0px) saturate(1); opacity:0.9; transform:scale(1.02); }
+        .wc-photo-panel img{ width:100%; height:100%; object-fit:cover; object-position:center; content: url("/DSC_4401.JPG"); filter:blur(0px) saturate(1); opacity:0.9; transform:scale(1.02); }
         /* Mobile portrait image */
-        @media (max-width: 768px) {.wc-photo-panel img {content: url("rk_new.jpg"); object-position: center top; /* optional */}}
+        @media (max-width: 768px) {.wc-photo-panel img {content: url("/rk_new.jpg"); object-position: center top; /* optional */}}
 
         .wc-card{ position:relative; z-index:10; width:100%; max-width:760px; background:rgba(255,255,255,0.95); backdrop-filter:blur(6px); border-radius:20px; padding:28px; box-shadow:0 10px 28px rgba(2,6,23,0.08); border:1px solid rgba(248,113,113,0.05); }
 
