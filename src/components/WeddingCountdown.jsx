@@ -112,11 +112,11 @@ export default function WeddingCountdown() {
         /* Mobile-specific improvements */
         @media (max-width:768px){
   .wc-stage { align-items:flex-end; padding:18px 12px 32px; }
-  .wc-card { width:calc(100% - 32px); padding:22px; border-radius:16px; }
-  .wc-title { font-size:40px; }
-  .wc-date strong { font-size:38px !important; }
-  .wc-grid { grid-template-columns:repeat(2,1fr); gap:14px; }
-  .wc-time-card { padding:18px; }
+  .wc-card { width:calc(100% - 20px); padding:10px; border-radius:12px; }
+  .wc-title { font-size:47px; }
+  .wc-date strong { font-size:40px !important; }
+  .wc-grid { grid-template-columns:repeat(2,1fr); gap:12px; }
+  .wc-time-card { padding:10px; }
   .wc-number { font-size:32px; }
 }
           .wc-card{ width: calc(100% - 20px); max-width:760px; margin: 5px auto; padding:10px; border-radius:12px; }
