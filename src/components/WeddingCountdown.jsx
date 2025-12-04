@@ -63,7 +63,7 @@ export default function WeddingCountdown() {
 
         :root{ --rose-50:#fff1f2; --amber-50:#fffbeb; --rose-800:#9f1239; }
         *{box-sizing:border-box}
-        html,body,#root{height:100%;overflow: hidden;}
+        html,body,#root{height:100%}
         body{margin:0}
 
         .wc-page{ min-height:100vh; width:100vw; display:flex; align-items:center; justify-content:center; padding:0; overflow:hidden; background:none; }
@@ -119,7 +119,7 @@ export default function WeddingCountdown() {
   .wc-time-card { padding:10px; }
   .wc-number { font-size:32px; }
 }
-          .wc-card{ width: calc(100% - 10px); max-width:760px; margin: 5px auto; padding:5px; border-radius:10px; }
+          .wc-card{ width: calc(100% - 10px); max-width:760px; margin: 5px auto; padding:5px; border-radius:10px; overflow: hidden;}
           .wc-title{ font-size:47px; margin-top:6px; line-height: 1.25; }
           .wc-date strong{ font-size:40px !important; }
           .wc-grid{ grid-template-columns: repeat(4, 1fr); gap:5px; margin-top:5px; }
