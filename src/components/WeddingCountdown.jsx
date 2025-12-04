@@ -119,11 +119,11 @@ export default function WeddingCountdown() {
   .wc-time-card { padding:10px; }
   .wc-number { font-size:32px; }
 }
-          .wc-card{ width: calc(100% - 20px); max-width:760px; margin: 5px auto; padding:10px; border-radius:12px; }
+          .wc-card{ width: calc(100% - 10px); max-width:760px; margin: 5px auto; padding:5px; border-radius:10px; }
           .wc-title{ font-size:47px; margin-top:6px; line-height: 1.25; }
           .wc-date strong{ font-size:40px !important; }
-          .wc-grid{ grid-template-columns: repeat(2, 1fr); gap:12px; margin-top:10px; }
-          .wc-time-card{ padding:10px; border-radius:12px; }
+          .wc-grid{ grid-template-columns: repeat(4, 1fr); gap:5px; margin-top:5px; }
+          .wc-time-card{ padding:5px; border-radius:12px; }
           .wc-number{ font-size:32px }
           .wc-photo-panel img{ object-position: center top; filter: blur(0px) saturate(1); transform:scale(1.02); }
         } .wc-title{ font-size:32px; } .wc-number{ font-size:35px } }
