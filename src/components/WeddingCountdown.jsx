@@ -63,7 +63,7 @@ export default function WeddingCountdown() {
 
         :root{ --rose-50:#fff1f2; --amber-50:#fffbeb; --rose-800:#9f1239; }
         *{box-sizing:border-box}
-        html,body,#root{height:100%}
+        html,body,#root{height:100%;overflow: hidden;}
         body{margin:0}
 
         .wc-page{ min-height:100vh; width:100vw; display:flex; align-items:center; justify-content:center; padding:0; overflow:hidden; background:none; }
