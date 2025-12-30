@@ -63,14 +63,14 @@ export default function WeddingCountdown() {
 
         :root{ --rose-50:#fff1f2; --amber-50:#fffbeb; --rose-800:#9f1239; }
         *{box-sizing:border-box}
-        html,body,#root{height:100%}
+        html,body,#root{height:100%;overflow: hidden;}
         body{margin:0}
 
         .wc-page{ min-height:100vh; width:100vw; display:flex; align-items:center; justify-content:center; padding:0; overflow:hidden; background:none; }
         .wc-stage{ position:relative; width:100%; max-width:none; display:flex; align-items:flex-end; justify-content:center; padding:18px 24px; height:100vh; }
 
         .wc-photo-panel{ position:fixed; left:0; top:0; width:100vw; height:100vh; border-radius:0; overflow:hidden; box-shadow:none; z-index:0; }
-        .wc-photo-panel img{ width:100%; height:100%; object-fit:cover; object-position:center; content: url("/DSC_4401.JPG"); filter:blur(0px) saturate(1); opacity:0.95; transform:scale(1.02); }
+        .wc-photo-panel img{ width:100%; height:100%; object-fit:cover; object-position:center; content: url("/DSC_4401.JPG"); filter:blur(0px) saturate(1); opacity:1; transform:scale(1.02); }
         /* Mobile portrait image */
         @media (max-width: 768px) {.wc-photo-panel img {content: url("/new_image.jpg"); object-position: center top; /* optional */}}
 
