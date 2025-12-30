@@ -63,16 +63,16 @@ export default function WeddingCountdown() {
 
         :root{ --rose-50:#fff1f2; --amber-50:#fffbeb; --rose-800:#9f1239; }
         *{box-sizing:border-box}
-        html,body,#root{height:100%;overflow: hidden;}
+        html,body,#root{height:100%;overflow: hidden;overscroll-behavior: none;}
         body{margin:0}
 
         .wc-page{ min-height:100vh; width:100vw; display:flex; align-items:center; justify-content:center; padding:0; overflow:hidden; background:none; }
         .wc-stage{ position:relative; width:100%; max-width:none; display:flex; align-items:flex-end; justify-content:center; padding:18px 24px; height:100vh; }
 
         .wc-photo-panel{ position:fixed; left:0; top:0; width:100vw; height:100vh; border-radius:0; overflow:hidden; box-shadow:none; z-index:0; }
-        .wc-photo-panel img{ width:100%; height:100%; object-fit:cover; object-position:center; content: url("/DSC_4401.JPG"); filter:blur(0px) saturate(1); opacity:1; transform:scale(1.02); }
+        .wc-photo-panel img{ width:100%; height:100%; object-fit:cover; object-position:center; content: url("/rk_2.jpeg"); filter:blur(0px) saturate(1); opacity:1; transform:scale(1.02); }
         /* Mobile portrait image */
-        @media (max-width: 768px) {.wc-photo-panel img {content: url("/new_image.jpg"); object-position: center top; /* optional */}}
+        @media (max-width: 768px) {.wc-photo-panel img {content: url("/rk_1.jpeg"); object-position: center top; /* optional */}}
 
         .wc-card{ position:relative; z-index:10; width:100%; max-width:760px; background:rgba(255,255,255,0.95); backdrop-filter:blur(6px); border-radius:20px; padding:28px; box-shadow:0 10px 28px rgba(2,6,23,0.08); border:1px solid rgba(248,113,113,0.05); }
 
@@ -111,7 +111,7 @@ export default function WeddingCountdown() {
 
         /* Mobile-specific improvements */
         @media (max-width:768px){
-  .wc-stage { align-items:flex-end; padding:18px 12px 32px; }
+  .wc-stage { align-items:flex-end; padding:18px 12px 20px; }
   .wc-card { width:calc(100% - 20px); padding:10px; border-radius:12px; }
   .wc-title { font-size:47px; }
   .wc-date strong { font-size:40px !important; }
