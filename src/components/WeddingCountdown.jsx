@@ -89,7 +89,7 @@ export default function WeddingCountdown() {
         .wc-time-card{ background:rgba(255,255,255,0.90); border-radius:14px; padding:22px; display:flex; flex-direction:column; align-items:center; justify-content:center; border:1px solid rgba(250,204,210,0.35); box-shadow:0 8px 20px rgba(15,23,42,0.04); }
 
         .wc-number{ font-family:'Playfair Display', serif; font-size:44px; font-weight:800; color:#932233; line-height:1; letter-spacing:-0.6px; text-shadow:0 2px 8px rgba(0,0,0,0.05); }
-        .wc-label{ margin-top:10px; font-family:'Cormorant Garamond', serif; font-size:15px; color:#7b394a; font-style:italic; }
+        .wc-label{ margin-top:5px; font-family:'Cormorant Garamond', serif; font-size:15px; color:#7b394a; font-style:italic; font-weight: 501}
 
         .wc-celebrate{ margin-top:22px; padding:14px; border-radius:12px; background:#fff6f7; text-align:center; border:1px solid #fde2e8; }
 
