@@ -93,7 +93,7 @@ export default function WeddingCountdown() {
     0 0 4px rgba(0,0,0,0.10);
 }
         .wc-subtitle{ font-family:'Cormorant Garamond', serif; font-style:italic; color:#932233; text-align:center; margin:0 0 0; font-size:22px; font-weight:300; }
-        .wc-date{ text-align:center; font-size:13px; color:#8a4b1f; margin-top:8px; }
+        .wc-date{ text-align:center; font-size:13px; color:#8a4b1f; margin-top:1px; }
 
         .wc-grid{ display:grid; grid-template-columns: repeat(4, 1fr); gap:18px; margin-top:28px; }
         .wc-time-card{ background:rgba(255,255,255,0.90); border-radius:14px; padding:22px; display:flex; flex-direction:column; align-items:center; justify-content:center; border:1px solid rgba(250,204,210,0.35); box-shadow:0 8px 20px rgba(15,23,42,0.04); }
