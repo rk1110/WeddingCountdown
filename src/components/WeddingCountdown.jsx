@@ -70,9 +70,9 @@ export default function WeddingCountdown() {
         .wc-stage{ position:relative; width:100%; max-width:none; display:flex; align-items:flex-end; justify-content:center; padding:18px 24px; height:100vh; }
 
         .wc-photo-panel{ position:fixed; left:0; top:0; width:100vw; height:100vh; border-radius:0; overflow:hidden; box-shadow:none; z-index:0; }
-        .wc-photo-panel img{ width:100%; height:100%; object-fit:cover; object-position:center; content: url("/DSC_4401.JPG"); filter:blur(0px) saturate(1); opacity:0.9; transform:scale(1.02); }
+        .wc-photo-panel img{ width:100%; height:100%; object-fit:cover; object-position:center; content: url("/DSC_4401.JPG"); filter:blur(0px) saturate(1); opacity:0.95; transform:scale(1.02); }
         /* Mobile portrait image */
-        @media (max-width: 768px) {.wc-photo-panel img {content: url("/rk_new.jpg"); object-position: center top; /* optional */}}
+        @media (max-width: 768px) {.wc-photo-panel img {content: url("/new_image.jpg"); object-position: center top; /* optional */}}
 
         .wc-card{ position:relative; z-index:10; width:100%; max-width:760px; background:rgba(255,255,255,0.95); backdrop-filter:blur(6px); border-radius:20px; padding:28px; box-shadow:0 10px 28px rgba(2,6,23,0.08); border:1px solid rgba(248,113,113,0.05); }
 
@@ -83,7 +83,7 @@ export default function WeddingCountdown() {
   font-weight:400; /* Great Vibes supports only 400 */
   text-align:center;
   margin:12px 0 10px;
-  background: linear-gradient(90deg,#E07A9B,#C75A82,#A94567,#82324E);
+  background: linear-gradient(90deg, #B54A5B, #A23545, #932233, #6F1421);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing:1.2px;
@@ -92,13 +92,13 @@ export default function WeddingCountdown() {
     0 2px 3px rgba(0,0,0,0.25),
     0 0 4px rgba(0,0,0,0.10);
 }
-        .wc-subtitle{ font-family:'Cormorant Garamond', serif; font-style:italic; color:#8b2a49; text-align:center; margin:0 0 8px; font-size:22px; font-weight:300; }
+        .wc-subtitle{ font-family:'Cormorant Garamond', serif; font-style:italic; color:#932233; text-align:center; margin:0 0 8px; font-size:22px; font-weight:300; }
         .wc-date{ text-align:center; font-size:13px; color:#8a4b1f; margin-top:8px; }
 
         .wc-grid{ display:grid; grid-template-columns: repeat(4, 1fr); gap:18px; margin-top:28px; }
         .wc-time-card{ background:rgba(255,255,255,0.90); border-radius:14px; padding:22px; display:flex; flex-direction:column; align-items:center; justify-content:center; border:1px solid rgba(250,204,210,0.35); box-shadow:0 8px 20px rgba(15,23,42,0.04); }
 
-        .wc-number{ font-family:'Playfair Display', serif; font-size:44px; font-weight:800; color:#5a122e; line-height:1; letter-spacing:-0.6px; text-shadow:0 2px 8px rgba(0,0,0,0.05); }
+        .wc-number{ font-family:'Playfair Display', serif; font-size:44px; font-weight:800; color:#932233; line-height:1; letter-spacing:-0.6px; text-shadow:0 2px 8px rgba(0,0,0,0.05); }
         .wc-label{ margin-top:10px; font-family:'Cormorant Garamond', serif; font-size:15px; color:#7b394a; font-style:italic; }
 
         .wc-celebrate{ margin-top:22px; padding:14px; border-radius:12px; background:#fff6f7; text-align:center; border:1px solid #fde2e8; }
@@ -125,7 +125,7 @@ export default function WeddingCountdown() {
           .wc-grid{ grid-template-columns: repeat(4, 1fr); gap:5px; margin-top:5px; }
           .wc-time-card{ padding:5px; border-radius:12px; }
           .wc-number{ font-size:32px }
-          .wc-photo-panel img{ object-position: center top; filter: blur(0px) saturate(1); transform:scale(1.02); }
+          .wc-photo-panel img{ object-position: center top; filter: blur(0px) saturate(1); transform:scale(1); }
         } .wc-title{ font-size:32px; } .wc-number{ font-size:35px } }
       `}</style>
 
@@ -143,11 +143,11 @@ export default function WeddingCountdown() {
                 fontFamily: "'Cormorant Garamond', serif",
                 fontSize: 48,
                 fontStyle: 'italic',
-                fontWeight: 800,
+                fontWeight: 501,
                 background: 'linear-gradient(90deg,#FFD700,#F6C400,#E6A400,#D99200)',
                 WebkitBackgroundClip: 'text',
                 color: 'transparent',
-                textShadow: '0 2px 6px rgba(0,0,0,0.25)',
+                textShadow: '0 2px 6px rgba(0,0,0,0.1)',
                 letterSpacing: '0.6px'
             }}>
                 {(() => {
