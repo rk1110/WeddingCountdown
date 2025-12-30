@@ -1,17 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 
-/*
-  WeddingCountdown.jsx — Improved: allow changing date quickly via URL query or by editing the constant.
-  - Primary source (in order): URL param `date` (ISO), EVENT_DATE_ISO constant
-  - Also supports optional URL param `name` to override EVENT_NAME for quick testing
-  - HMR-friendly: component updates when URL changes (you may need to refresh the preview in some environments)
-*/
-
-// --- Edit these two values to your real event (or supply ?date= and ?name= in the URL) ----------------
 const EVENT_NAME = "Rutvik ❤️ Kinjal";
-const EVENT_DATE_ISO = "2026-02-08T00:00:00"; // YYYY-MM-DDTHH:MM:SS
-// ----------------------------------------------------------------------------------------------------
-
+const EVENT_DATE_ISO = "2026-02-08T00:00:00";
 const SAMPLE_BG = "/DSC_4401.JPG"; // decorative placeholder image
 
 // Helper: calculate time left safely
@@ -70,7 +60,7 @@ export default function WeddingCountdown() {
         .wc-stage{ position:relative; width:100%; max-width:none; display:flex; align-items:flex-end; justify-content:center; padding:18px 24px; height:100vh; }
 
         .wc-photo-panel{ position:fixed; left:0; top:0; width:100vw; height:100vh; border-radius:0; overflow:hidden; box-shadow:none; z-index:0; }
-        .wc-photo-panel img{ width:100%; height:100%; object-fit:cover; object-position:center; content: url("/rk_3.jpg"); filter:blur(0px) saturate(1); opacity:1; transform:scale(1.02); }
+        .wc-photo-panel img{ width:100%; height:100%; object-fit:cover; object-position:center; content: url("/rk_2.jpg"); filter:blur(0px) saturate(1); opacity:1; transform:scale(1.02); }
         /* Mobile portrait image */
         @media (max-width: 768px) {.wc-photo-panel img {content: url("/rk_1.jpg"); object-position: center top; /* optional */}}
 
@@ -92,7 +82,7 @@ export default function WeddingCountdown() {
     0 2px 3px rgba(0,0,0,0.25),
     0 0 4px rgba(0,0,0,0.10);
 }
-        .wc-subtitle{ font-family:'Cormorant Garamond', serif; font-style:italic; color:#932233; text-align:center; margin:0 0 0; font-size:22px; font-weight:300; }
+        .wc-subtitle{ font-family:'Cormorant Garamond', serif; font-style:italic; color:#932233; text-align:center; margin:0 0 0; font-size:18px; font-weight:300; }
         .wc-date{ text-align:center; font-size:13px; color:#8a4b1f; margin-top:1px; }
 
         .wc-grid{ display:grid; grid-template-columns: repeat(4, 1fr); gap:18px; margin-top:28px; }
@@ -119,14 +109,14 @@ export default function WeddingCountdown() {
   .wc-time-card { padding:10px; }
   .wc-number { font-size:32px; }
 }
-          .wc-card{ width: calc(100% - 10px); max-width:760px; max-height: calc(100vh - env(safe-area-inset-top, 16px) - env(safe-area-inset-bottom, 16px) - 28px); margin: 0 auto; padding:5px; border-radius:10px; overflow: hidden; transform: translateY(0);}
-          .wc-title{ font-size:47px; margin-top:6px; line-height: 1.25; }
-          .wc-date strong{ font-size:40px !important; }
+          .wc-card{ width: 100%; max-width:760px; max-height: calc(100vh - env(safe-area-inset-top, 16px) - env(safe-area-inset-bottom, 16px) - 28px); margin: 0 auto; padding:5px; border-radius:10px; overflow: hidden; transform: translateY(0);}
+          .wc-title{ font-size:40px; margin-top:6px; line-height: 1.25; }
+          .wc-date strong{ font-size:30px !important; }
           .wc-grid{ grid-template-columns: repeat(4, 1fr); gap:5px; margin-top:5px; }
-          .wc-time-card{ padding:5px; border-radius:12px; }
+          .wc-time-card{ padding:2px; border-radius:10px; }
           .wc-number{ font-size:32px }
           .wc-photo-panel img{ object-position: center top; filter: blur(0px) saturate(1); transform:scale(1); }
-        } .wc-title{ font-size:32px; } .wc-number{ font-size:35px } }
+        } .wc-title{ font-size:32px; } .wc-number{ font-size:30px } }
       `}</style>
 
       <div className="wc-stage" role="main">
