@@ -109,7 +109,7 @@ export default function WeddingCountdown() {
   .wc-time-card { padding:10px; }
   .wc-number { font-size:32px; }
 }
-          .wc-card{ width: 100%; max-width:760px; max-height: calc(100vh - env(safe-area-inset-top, 16px) - env(safe-area-inset-bottom, 16px) - 28px); margin: 0 auto; padding:5px; border-radius:10px; overflow: hidden; transform: translateY(0);}
+          .wc-card{ width: 100%; max-width:760px; max-height: calc(100svh - env(safe-area-inset-top, 16px) - env(safe-area-inset-bottom, 16px) - 28px); margin: 0 auto; padding:5px; border-radius:10px; overflow: hidden; transform: translateY(0);}
           .wc-title{ font-size:40px; margin-top:6px; line-height: 1.25; }
           .wc-date strong{ font-size:30px !important; }
           .wc-grid{ grid-template-columns: repeat(4, 1fr); gap:5px; margin-top:5px; }
