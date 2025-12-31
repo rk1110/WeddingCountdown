@@ -53,7 +53,7 @@ export default function WeddingCountdown() {
 
         :root{ --rose-50:#fff1f2; --amber-50:#fffbeb; --rose-800:#9f1239; }
         *{box-sizing:border-box}
-        html,body,#root{height:100%;}
+        html,body,#root{height:100%; overflow: hidden;}
         body{margin:0}
 
         .wc-page{ min-height:100vh; width:100vw; display:flex; align-items:center; justify-content:center; padding:0; overflow:hidden; background:none; }
@@ -93,30 +93,23 @@ export default function WeddingCountdown() {
 
         .wc-celebrate{ margin-top:22px; padding:14px; border-radius:12px; background:#fff6f7; text-align:center; border:1px solid #fde2e8; }
 
-        @media (max-width:880px){ 
-          .wc-grid{ grid-template-columns: repeat(2, 1fr); gap:14px; } 
-          .wc-title{ font-size:36px; line-height:1.15; } 
-          .wc-number{ font-size:34px } 
-        }
+        // @media (max-width:880px){ 
+        //   .wc-grid{ grid-template-columns: repeat(2, 1fr); gap:14px; } 
+        //   .wc-title{ font-size:36px; line-height:1.15; } 
+        //   .wc-number{ font-size:34px } 
+        // }
 
         /* Mobile-specific improvements */
         @media (max-width:768px){
-  .wc-stage { align-items:flex-end; padding:18px 12px 20px; }
-  .wc-card { width:calc(100% - 20px); padding:10px; border-radius:12px; }
-  .wc-title { font-size:47px; }
-  .wc-date strong { font-size:40px !important; }
-  .wc-grid { grid-template-columns:repeat(2,1fr); gap:12px; }
-  .wc-time-card { padding:10px; }
-  .wc-number { font-size:32px; }
-}
-          .wc-card{ width: 100%; max-width:760px; max-height: calc(100svh - env(safe-area-inset-top, 16px) - env(safe-area-inset-bottom, 16px) - 28px); margin: 0 auto; padding:5px; border-radius:10px; overflow: hidden; transform: translateY(0);}
-          .wc-title{ font-size:40px; margin-top:6px; line-height: 1.25; }
-          .wc-date strong{ font-size:30px !important; }
-          .wc-grid{ grid-template-columns: repeat(4, 1fr); gap:5px; margin-top:5px; }
-          .wc-time-card{ padding:2px; border-radius:10px; }
-          .wc-number{ font-size:32px }
-          .wc-photo-panel img{ object-position: center top; filter: blur(0px) saturate(1); transform:scale(1); }
-        } .wc-title{ font-size:32px; } .wc-number{ font-size:30px } }
+          .wc-stage { height: 100vh; height: 100dvh; position: relative; overflow: hidden; }
+          .wc-card{ position: absolute; bottom: calc(env(safe-area-inset-bottom, 16px) + 12px); width: 100%; max-width: 420px; padding:5px; border-radius:10px; }
+          .wc-date strong { font-size:30px !important; }
+          .wc-grid { grid-template-columns: repeat(4, 1fr); gap:5px; margin-top:5px; }
+          .wc-time-card { padding:2px; border-radius:10px; }
+          .wc-photo-panel img { object-position: center top; filter: blur(0px) saturate(1); transform:scale(1); }
+          .wc-title { font-size:40px; line-height: 1.25}
+          .wc-number { font-size:30px } 
+        }
       `}</style>
 
       <div className="wc-stage" role="main">
