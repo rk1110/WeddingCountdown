@@ -72,7 +72,7 @@ export default function WeddingCountdown() {
   font-size:62px;
   font-weight:400; /* Great Vibes supports only 400 */
   text-align:center;
-  margin:12px 0 10px;
+  margin:10px 0 5px;
   background: linear-gradient(90deg, #B54A5B, #A23545, #932233, #6F1421);
   -webkit-background-clip: text;
   color: transparent;
@@ -102,7 +102,7 @@ export default function WeddingCountdown() {
         /* Mobile-specific improvements */
         @media (max-width:768px){
           .wc-stage { height: 100vh; height: 100dvh; position: relative; overflow: hidden; }
-          .wc-card{ position: fixed; bottom: calc(env(safe-area-inset-bottom, 16px) + 12px); width: 95%; max-width: 420px; padding:5px; border-radius:10px; right:5px; left:10px;}
+          .wc-card{ position: fixed; bottom: calc(env(safe-area-inset-bottom, 16px) + 12px); width: 90%; max-width: 420px; padding:2px; border-radius:10px; left:20px;}
           .wc-date strong { font-size:30px !important; }
           .wc-grid { grid-template-columns: repeat(4, 1fr); gap:5px; margin-top:5px; }
           .wc-time-card { padding:2px; border-radius:10px; }
