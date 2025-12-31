@@ -57,14 +57,14 @@ export default function WeddingCountdown() {
         body{margin:0}
 
         .wc-page{ min-height:100vh; width:100vw; display:flex; align-items:center; justify-content:center; padding:0; overflow:hidden; background:none; }
-        .wc-stage{ position:relative; width:100%; max-width:none; justify-content:center; padding:18px 24px; height:100svh; }
+        .wc-stage{ position:fixed; width:100%; max-width:none; justify-content:center; padding:18px 24px; height:100svh; }
 
         .wc-photo-panel{ position:fixed; left:0; top:0; width:100vw; height:100svh; border-radius:0; overflow:hidden; box-shadow:none; z-index:0; }
         .wc-photo-panel img{ width:100%; height:100%; object-fit:cover; object-position:center; content: url("/rk_2.jpg"); filter:blur(0px) saturate(1); opacity:1; transform:scale(1.02); }
         /* Mobile portrait image */
         @media (max-width: 768px) {.wc-photo-panel img {content: url("/rk_1.jpg"); object-position: center top; /* optional */}}
 
-        .wc-card{ position:relative; z-index:10; width:100%; max-width:760px; background:rgba(255,255,255,0.95); backdrop-filter:blur(6px); border-radius:20px; padding:28px; box-shadow:0 10px 28px rgba(2,6,23,0.08); border:1px solid rgba(248,113,113,0.05); }
+        .wc-card{ position:fixed; z-index:10; width:100%; max-width:760px; background:rgba(255,255,255,0.95); backdrop-filter:blur(6px); border-radius:20px; padding:28px; box-shadow:0 10px 28px rgba(2,6,23,0.08); border:1px solid rgba(248,113,113,0.05); }
 
         .wc-title{
   font-family:'Great Vibes', cursive;
@@ -101,14 +101,14 @@ export default function WeddingCountdown() {
 
         /* Mobile-specific improvements */
         @media (max-width:768px){
-          .wc-stage { height: 100vh; height: 100dvh; position: relative; overflow: hidden; }
+          .wc-stage { height: 100vh; height: 100dvh; position: fixed; overflow: hidden; }
           .wc-card{ position: fixed; bottom: calc(env(safe-area-inset-bottom, 16px) + 12px); width: 90%; max-width: 420px; padding:2px; border-radius:10px; left:20px;}
           .wc-date strong { font-size:30px !important; }
           .wc-grid { grid-template-columns: repeat(4, 1fr); gap:5px; margin-top:5px; }
           .wc-time-card { padding:2px; border-radius:10px; }
-          .wc-photo-panel img { object-position: center top; filter: blur(0px) saturate(1); transform:scale(1); }
+          .wc-photo-panel img { object-position: center top; transform:scale(1); }
           .wc-title { font-size:40px; line-height: 1.25}
-          .wc-number { font-size:30px } 
+          .wc-number { font-size:30px }
         }
       `}</style>
 
