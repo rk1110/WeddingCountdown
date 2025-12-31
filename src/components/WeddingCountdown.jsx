@@ -64,7 +64,7 @@ export default function WeddingCountdown() {
         /* Mobile portrait image */
         @media (max-width: 768px) {.wc-photo-panel img {content: url("/rk_1.jpg"); object-position: center top; /* optional */}}
 
-        .wc-card{ position:fixed; z-index:10; width:100%; max-width:760px; background:rgba(255,255,255,0.95); backdrop-filter:blur(6px); border-radius:20px; padding:28px; box-shadow:0 10px 28px rgba(2,6,23,0.08); border:1px solid rgba(248,113,113,0.05); }
+        .wc-card{ position:fixed; left: 450px; bottom: 20px; z-index:10; width:100%; max-width:760px; background:rgba(255,255,255,0.95); backdrop-filter:blur(6px); border-radius:20px; padding:28px; box-shadow:0 10px 28px rgba(2,6,23,0.08); border:1px solid rgba(248,113,113,0.05); }
 
         .wc-title{
   font-family:'Great Vibes', cursive;
@@ -102,7 +102,7 @@ export default function WeddingCountdown() {
         /* Mobile-specific improvements */
         @media (max-width:768px){
           .wc-stage { height: 100vh; height: 100dvh; position: fixed; overflow: hidden; }
-          .wc-card{ position: fixed; bottom: calc(env(safe-area-inset-bottom, 16px) + 12px); width: 90%; max-width: 420px; padding:2px; border-radius:10px; left:20px;}
+          .wc-card{ position: fixed; bottom: calc(env(safe-area-inset-bottom, 16px) + 12px); width: 90%; max-width: 420px; padding:4px; border-radius:10px; left:20px;}
           .wc-date strong { font-size:30px !important; }
           .wc-grid { grid-template-columns: repeat(4, 1fr); gap:5px; margin-top:5px; }
           .wc-time-card { padding:2px; border-radius:10px; }
