@@ -57,7 +57,7 @@ export default function WeddingCountdown() {
         body{margin:0}
 
         .wc-page{ min-height:100vh; width:100vw; display:flex; align-items:center; justify-content:center; padding:0; overflow:hidden; background:none; }
-        .wc-stage{ position:relative; width:100%; max-width:none; display:flex; align-items:flex-end; justify-content:center; padding:18px 24px; height:100svh; }
+        .wc-stage{ position:relative; width:100%; max-width:none; justify-content:center; padding:18px 24px; height:100svh; }
 
         .wc-photo-panel{ position:fixed; left:0; top:0; width:100vw; height:100svh; border-radius:0; overflow:hidden; box-shadow:none; z-index:0; }
         .wc-photo-panel img{ width:100%; height:100%; object-fit:cover; object-position:center; content: url("/rk_2.jpg"); filter:blur(0px) saturate(1); opacity:1; transform:scale(1.02); }
@@ -102,7 +102,7 @@ export default function WeddingCountdown() {
         /* Mobile-specific improvements */
         @media (max-width:768px){
           .wc-stage { height: 100vh; height: 100dvh; position: relative; overflow: hidden; }
-          .wc-card{ position: absolute; bottom: calc(env(safe-area-inset-bottom, 16px) + 12px); width: 100%; max-width: 420px; padding:5px; border-radius:10px; }
+          .wc-card{ position: fixed; bottom: calc(env(safe-area-inset-bottom, 16px) + 12px); width: 95%; max-width: 420px; padding:5px; border-radius:10px; right:5px; left:10px;}
           .wc-date strong { font-size:30px !important; }
           .wc-grid { grid-template-columns: repeat(4, 1fr); gap:5px; margin-top:5px; }
           .wc-time-card { padding:2px; border-radius:10px; }
@@ -117,7 +117,7 @@ export default function WeddingCountdown() {
           <img src={SAMPLE_BG} alt="decorative wedding" />
         </div>
 
-        <div className="wc-card" role="region" aria-label="Countdown card" style={{ position: 'relative' }}>
+        <div className="wc-card" role="region" aria-label="Countdown card">
           <header style={{ textAlign: "center", marginTop: 10 }}>
             <h1 className="wc-title">{effectiveName}</h1>
             <p className="wc-subtitle">Counting down to our big day</p>
