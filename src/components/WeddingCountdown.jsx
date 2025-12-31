@@ -53,7 +53,7 @@ export default function WeddingCountdown() {
 
         :root{ --rose-50:#fff1f2; --amber-50:#fffbeb; --rose-800:#9f1239; }
         *{box-sizing:border-box}
-        html,body,#root{height:100%; overflow: hidden;}
+        html,body,#root{height:100%;}
         body{margin:0}
 
         .wc-page{ min-height:100vh; width:100vw; display:flex; align-items:center; justify-content:center; padding:0; overflow:hidden; background:none; }
@@ -117,12 +117,12 @@ export default function WeddingCountdown() {
           <img src={SAMPLE_BG} alt="decorative wedding" />
         </div>
 
-        <div className="wc-card" role="region" aria-label="Countdown card" style={{ position:'relative' }}>
+        <div className="wc-card" role="region" aria-label="Countdown card" style={{ position: 'relative' }}>
           <header style={{ textAlign: "center", marginTop: 10 }}>
             <h1 className="wc-title">{effectiveName}</h1>
             <p className="wc-subtitle">Counting down to our big day</p>
             <div className="wc-date">
-            <strong style={{
+              <strong style={{
                 fontFamily: "'Cormorant Garamond', serif",
                 fontSize: 48,
                 fontStyle: 'italic',
@@ -132,12 +132,12 @@ export default function WeddingCountdown() {
                 color: 'transparent',
                 textShadow: '0 2px 6px rgba(0,0,0,0.1)',
                 letterSpacing: '0.6px'
-            }}>
+              }}>
                 {(() => {
-                const d = new Date(effectiveDate);
-                return `${("0"+d.getDate()).slice(-2)}/${("0"+(d.getMonth()+1)).slice(-2)}/${d.getFullYear()}`;
+                  const d = new Date(effectiveDate);
+                  return `${("0" + d.getDate()).slice(-2)}/${("0" + (d.getMonth() + 1)).slice(-2)}/${d.getFullYear()}`;
                 })()}
-            </strong>
+              </strong>
             </div>
           </header>
 
@@ -151,7 +151,7 @@ export default function WeddingCountdown() {
 
             {reached && (
               <div className="wc-celebrate">
-                <div style={{ fontFamily: "'Playfair Display', serif", fontSize:20, color:'#9f1239', fontWeight:700 }}> The day is here — We are getting married today ❤️ ❤️</div>
+                <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 20, color: '#9f1239', fontWeight: 700 }}> The day is here — We are getting married today ❤️ ❤️</div>
               </div>
             )}
           </main>
@@ -167,14 +167,5 @@ function TimeCard({ label, value }) {
       <div className="wc-number">{value === undefined || isNaN(value) ? "--" : value}</div>
       <div className="wc-label">{label}</div>
     </div>
-  );
-}
-
-function FloralHeader() {
-  // kept for backward compatibility — returns a small elegant divider
-  return (
-    <svg width="260" height="24" viewBox="0 0 520 24" fill="none" aria-hidden>
-      <path d="M20 12 C120 0, 400 24, 500 12" stroke="#FECACA" strokeWidth="2" strokeLinecap="round" opacity="0.9" />
-    </svg>
   );
 }
