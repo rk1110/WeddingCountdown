@@ -59,7 +59,7 @@ export default function WeddingCountdown() {
         .wc-page{ min-height:100vh; width:100vw; display:flex; align-items:center; justify-content:center; padding:0; overflow:hidden; background:none; }
         .wc-stage{ position:relative; width:100%; max-width:none; display:flex; align-items:flex-end; justify-content:center; padding:18px 24px; height:100svh; }
 
-        .wc-photo-panel{ position:fixed; left:0; top:0; width:100vw; height:100vh; border-radius:0; overflow:hidden; box-shadow:none; z-index:0; }
+        .wc-photo-panel{ position:fixed; left:0; top:0; width:100vw; height:100svh; border-radius:0; overflow:hidden; box-shadow:none; z-index:0; }
         .wc-photo-panel img{ width:100%; height:100%; object-fit:cover; object-position:center; content: url("/rk_2.jpg"); filter:blur(0px) saturate(1); opacity:1; transform:scale(1.02); }
         /* Mobile portrait image */
         @media (max-width: 768px) {.wc-photo-panel img {content: url("/rk_1.jpg"); object-position: center top; /* optional */}}
