@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 
 const EVENT_NAME = "Rutvik ❤️ Kinjal";
-const EVENT_DATE_ISO = "2026-02-08T00:00:00";
+const EVENT_DATE_ISO = "2025-02-08T00:00:00";
 const SAMPLE_BG = "/DSC_4401.JPG"; // decorative placeholder image
 
 // Helper: calculate time left safely
