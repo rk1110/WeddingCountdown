@@ -59,12 +59,12 @@ export default function WeddingCountdown() {
         .wc-page{ min-height:100vh; width:100vw; display:flex; align-items:center; justify-content:center; padding:0; overflow:hidden; background:none; }
         .wc-stage{ position:fixed; width:100%; max-width:none; justify-content:center; padding:18px 24px; height:100svh; }
 
-        .wc-photo-panel{ position:fixed; left:0; top:0; width:100vw; height:80vw; border-radius:0; overflow:hidden; box-shadow:none; z-index:0; }
+        .wc-photo-panel{ position:fixed; left:0; top:0; border-radius:0; overflow:hidden; box-shadow:none; z-index:0; }
         .wc-photo-panel img{ width:100%; height:100%; object-fit:cover; object-position:center; content: url("/rk_2.jpg"); transform:scale(1);}
         /* Mobile portrait image */
         @media (max-width: 768px) {.wc-photo-panel img {content: url("/rk_1.jpg"); object-position: center top; /* optional */}}
 
-        .wc-card{ position:fixed; left: 50%; transform: translateX(-50%); bottom: 20px; z-index:10; width:100%; max-width:520px; background:rgba(255,255,255,0.95); backdrop-filter:blur(6px); border-radius:20px; padding:10px; box-shadow:0 10px 28px rgba(2,6,23,0.08); border:1px solid rgba(248,113,113,0.05); }
+        .wc-card{ position:fixed; left: 50%; transform: translateX(-50%); bottom: 10px; z-index:10; width:100%; max-width:500px; background:rgba(255,255,255,0.95); backdrop-filter:blur(6px); border-radius:20px; padding:5px; box-shadow:0 10px 28px rgba(2,6,23,0.08); border:1px solid rgba(248,113,113,0.05); }
 
         .wc-title{
   font-family:'Great Vibes', cursive;
@@ -91,7 +91,7 @@ export default function WeddingCountdown() {
         .wc-number{ font-family:'Playfair Display', serif; font-size:30px; font-weight:800; color:#932233; line-height:1; letter-spacing:-0.6px; text-shadow:0 2px 8px rgba(0,0,0,0.05); }
         .wc-label{ margin-top:5px; font-family:'Cormorant Garamond', serif; font-size:15px; color:#7b394a; font-style:italic; font-weight: 501}
 
-        .wc-celebrate{ margin-top:22px; padding:14px; border-radius:12px; background:#fff6f7; text-align:center; border:1px solid #fde2e8; }
+        .wc-celebrate{ margin-top:5px; padding:5px; border-radius:20px; background:#fff6f7; text-align:center; border:1px solid #fde2e8; }
 
         // @media (max-width:880px){ 
         //   .wc-grid{ grid-template-columns: repeat(2, 1fr); gap:14px; } 
@@ -152,7 +152,7 @@ export default function WeddingCountdown() {
 
             {reached && (
               <div className="wc-celebrate">
-                <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 20, color: '#9f1239', fontWeight: 700 }}> The day is here — We are getting married today ❤️ ❤️</div>
+                <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 20, color: '#9f1239', fontWeight: 700 }}> The golden day is finally here ✨<br/> We are getting married today. ❤️ ❤️</div>
               </div>
             )}
           </main>
