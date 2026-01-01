@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 
 const EVENT_NAME = "Rutvik ❤️ Kinjal";
-const EVENT_DATE_ISO = "2026-02-08T00:00:00";
+const EVENT_DATE_ISO = "2025-02-08T00:00:00";
 const SAMPLE_BG = "/DSC_4401.JPG"; // decorative placeholder image
 
 // Helper: calculate time left safely
@@ -64,7 +64,7 @@ export default function WeddingCountdown() {
         /* Mobile portrait image */
         @media (max-width: 768px) {.wc-photo-panel img {content: url("/rk_1.jpg"); object-position: center top; /* optional */}}
 
-        .wc-card{ position:fixed; left: 50%; transform: translateX(-50%); bottom: 10px; z-index:10; width:100%; max-width:500px; background:rgba(255,255,255,0.95); backdrop-filter:blur(6px); border-radius:20px; padding:5px; box-shadow:0 10px 28px rgba(2,6,23,0.08); border:1px solid rgba(248,113,113,0.05); }
+        .wc-card{ position:fixed; left: 50%; transform: translateX(-50%); bottom: 10px; z-index:10; width:100%; max-width:500px; background:rgba(255,255,255,0.95); backdrop-filter:blur(6px); border-radius:10px; padding:5px; box-shadow:0 10px 28px rgba(2,6,23,0.08); border:1px solid rgba(248,113,113,0.05); }
 
         .wc-title{
   font-family:'Great Vibes', cursive;
@@ -86,12 +86,12 @@ export default function WeddingCountdown() {
         .wc-date{ text-align:center; font-size:13px; color:#8a4b1f; margin-top:1px; }
 
         .wc-grid{ display:grid; grid-template-columns: repeat(4, 1fr); gap:8px; margin-top:2px; }
-        .wc-time-card{ background:rgba(255,255,255,0.90); border-radius:14px; padding:5px; display:flex; flex-direction:column; align-items:center; justify-content:center; border:1px solid rgba(250,204,210,0.35); box-shadow:0 8px 20px rgba(15,23,42,0.04); }
+        .wc-time-card{ background:rgba(255,255,255,0.90); border-radius:10px; padding:5px; display:flex; flex-direction:column; align-items:center; justify-content:center; border:1px solid rgba(250,204,210,0.35); box-shadow:0 8px 20px rgba(15,23,42,0.04); }
 
         .wc-number{ font-family:'Playfair Display', serif; font-size:30px; font-weight:800; color:#932233; line-height:1; letter-spacing:-0.6px; text-shadow:0 2px 8px rgba(0,0,0,0.05); }
         .wc-label{ margin-top:5px; font-family:'Cormorant Garamond', serif; font-size:15px; color:#7b394a; font-style:italic; font-weight: 501}
 
-        .wc-celebrate{ margin-top:5px; padding:5px; border-radius:20px; background:#fff6f7; text-align:center; border:1px solid #fde2e8; }
+        .wc-celebrate{ margin-top:5px; padding:5px; border-radius:10px; background:#fff6f7; text-align:center; border:1px solid #fde2e8; }
 
         // @media (max-width:880px){ 
         //   .wc-grid{ grid-template-columns: repeat(2, 1fr); gap:14px; } 
@@ -102,10 +102,10 @@ export default function WeddingCountdown() {
         /* Mobile-specific improvements */
         @media (max-width:768px){
           .wc-stage { height: 100vh; height: 100dvh; position: fixed; overflow: hidden; }
-          .wc-card{ position: fixed; bottom: calc(env(safe-area-inset-bottom, 16px) + 12px); width: 90%; max-width: 420px; padding:4px; border-radius:10px;}
+          .wc-card{ position: fixed; bottom: calc(env(safe-area-inset-bottom, 16px) + 12px); width: 90%; max-width: 420px; padding:4px;}
           .wc-date strong { font-size:30px !important; }
           .wc-grid { grid-template-columns: repeat(4, 1fr); gap:5px; margin-top:5px; }
-          .wc-time-card { padding:2px; border-radius:10px; }
+          .wc-time-card { padding:2px; }
           .wc-photo-panel { height: auto;}
           .wc-photo-panel img { object-position: center top; height:100vh; transform:scale(1); }
           .wc-title { font-size:40px; line-height: 1.25}
